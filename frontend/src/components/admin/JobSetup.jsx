@@ -29,7 +29,6 @@ const JobSetup = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        // If editing, fetch job by id and prefill
         const fetchJob = async () => {
             if (params.id) {
                 try {

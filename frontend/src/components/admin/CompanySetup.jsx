@@ -34,7 +34,7 @@ const CompanySetup = () => {
         try {
             setLoading(true);
             const res = await axios.put(
-                `http://localhost:8000/api/v1/company/update/${params.id}`,
+                `https://jobnexus-31gc.onrender.com/api/v1/company/update/${params.id}`,
                 {
                     name: input.name,
                     description: input.description,

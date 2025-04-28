@@ -34,7 +34,7 @@ const Signup = () => {
     try {
       dispatch(setLoading(true));
       const res = await axios.post(
-        `http://localhost:8000/api/v1/user/register`,
+        `https://jobnexus-31gc.onrender.com/api/v1/user/register`,
         {
           fullname: input.fullname,
           email: input.email,

@@ -22,7 +22,7 @@ const CompaniesTable = () => {
         if (!window.confirm('Are you sure you want to delete this company?')) return;
         setDeletingId(id);
         try {
-            const res = await axios.delete(`http://localhost:8000/api/v1/company/delete/${id}`, { withCredentials: true });
+            const res = await axios.delete(`https://jobnexus-31gc.onrender.com/api/v1/company/delete/${id}`, { withCredentials: true });
             if (res.data.success) {
                 window.location.reload();
             } else {
