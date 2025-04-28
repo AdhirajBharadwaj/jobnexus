@@ -19,7 +19,7 @@ const Job = ({job}) => {
         <div className='p-5 rounded-md shadow-xl bg-white border border-gray-100'>
             <div className='flex items-center justify-between'>
                 <p className='text-sm text-gray-500'>{daysAgoFunction(job?.createdAt) === 0 ? "Today" : `${daysAgoFunction(job?.createdAt)} days ago`}</p>
-                <Button variant="outline" className="rounded-full" size="icon"><Bookmark /></Button>
+                
             </div>
 
             <div className='flex items-center gap-3 my-2'>
@@ -47,7 +47,6 @@ const Job = ({job}) => {
             </div>
             <div className='flex items-center gap-4 mt-4'>
                 <Button onClick={()=> navigate(`/description/${job?._id}`)} variant="outline">Details</Button>
-                <Button className="bg-[#7209b7]">Save For Later</Button>
             </div>
         </div>
     )
